@@ -87,3 +87,9 @@ kubectl expose replicationcontroller node-app-rc --type=LoadBalancer --name=node
 ```bash
 kubectl scale replicationcontroller node-app-rc --replicas=3
 ```
+
+### Removendo o cluster ($$)
+
+```bash
+gcloud container clusters delete fatec-demo --zone us-east1
+```
