@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: node-app-rc
+spec:
+  replicas: 3
+  selector:
+    app: node-app-rc
+  template:
+    metadata:
+      name: node-app-rc
+      labels:
+        app: node-app-rc
+    spec:
+      containers:
+        - name: node-app
+          image: olegon/node-app:v1
+          ports:
+            - containerPort: 5000

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-app-rc-lb
+spec:
+  selector:
+    app: node-app-rc
+  ports:
+  - port: 5000
+    targetPort: 5000
+  type: LoadBalancer
