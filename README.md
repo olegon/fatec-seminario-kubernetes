@@ -67,7 +67,7 @@ kubectl scale replicationcontroller node-app-rc --replicas=3
 ### Criando um cluster
 
 ```bash
-gcloud container clusters create fatec-demo --num-nodes 1 --machine-type f1-micro --region us-east1
+gcloud container clusters create fatec-demo --num-nodes 1 --machine-type n1-standard-1 --region us-east1
 ```
 
 ### Rodando a aplicação
